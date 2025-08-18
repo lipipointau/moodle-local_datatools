@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect x="16" y="16" width="480" height="480" rx="64" fill="#000000"/>
+  <!-- '>' symbol -->
+  <polygon points="180,150 340,256 180,362 208,392 392,256 208,120" fill="#ffffff"/>
+  <!-- '_' cursor -->
+  <rect x="300" y="320" width="120" height="28" rx="6" fill="#ffffff"/>
+</svg>
