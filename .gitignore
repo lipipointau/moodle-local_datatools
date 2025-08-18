@@ -1,0 +1,58 @@
+# -------------------------------------------------------------------
+# Moodle Plugin .gitignore (standard for GitHub / Marketplace)
+# -------------------------------------------------------------------
+
+# OS / System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.iml
+
+# Node / JS build artefacts (if used for AMD modules or webpack)
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# PHP dependencies (if you bundle composer)
+vendor/
+composer.lock
+
+# Build / Cache
+.cache/
+*.log
+
+# Moodle local caches (if accidentally copied in)
+moodledata/
+localcache/
+sessions/
+temp/
+cache/
+trashdir/
+
+# Backup / Export files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# OS swap files
+*.swp
+*.swo
+*~
+
+# PHPUnit / Behat test outputs
+phpunit.xml
+phpunit.xml.dist
+behat.yml
+behat.yml.dist
+results.xml
+coverage.xml
+coverage/
