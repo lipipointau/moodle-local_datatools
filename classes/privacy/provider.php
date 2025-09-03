@@ -24,7 +24,18 @@
 
 namespace local_datatools\privacy;
 
+/**
+ * Provider for the privacy API.
+ *
+ * @package    local_datatools
+ * @category   privacy
+ */
 class provider implements \core_privacy\local\metadata\null_provider {
+    /**
+     * Explain why this plugin stores no personal data.
+     *
+     * @return string Language string identifier.
+     */
     public static function get_reason(): string {
         return 'privacy:metadata';
     }
