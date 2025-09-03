@@ -21,5 +21,7 @@
  * @copyright  2025 Bikram Kawan <bikramkawan@gmail.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+
 $string['pluginname'] = 'Data Tools (CLI)';
 $string['privacy:metadata'] = 'The data tools script doesnot store any information.';
