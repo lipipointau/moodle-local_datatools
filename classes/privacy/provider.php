@@ -1,4 +1,3 @@
-
 <?php
 /**
 This file is part of Moodle - http://moodle.org/
@@ -20,10 +19,19 @@ along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
  * @copyright  2025 Bikram Kawan <bikramkawan@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-defined('MOODLE_INTERNAL') || die();
+namespace local_datatools\privacy;
 
-$plugin->component = 'local_datatools';
-$plugin->version   = 2025081800;
-$plugin->release   = '1.0.0';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->requires  = 2016120500; // Moodle 3.2
+class provider implements
+    // This plugin does not store any personal user data.
+    \core_privacy\local\metadata\null_provider {
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason(): string {
+        return 'privacy:metadata';
+    }
+}
